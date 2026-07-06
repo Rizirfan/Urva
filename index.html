@@ -325,16 +325,19 @@
       position:relative;
       display:flex;flex-direction:column;line-height:1.1;
     }
-    .navbar .logo .logo-morse{
-      font-size:12px;font-weight:900;letter-spacing:4px;
-      font-family:'Courier New',monospace;
+    .navbar .logo .logo-icon{
+      width:22px;height:22px;display:block;
+      color:#d4a853;
+      fill:none;stroke:currentColor;stroke-width:1.8;
+      stroke-linecap:round;stroke-linejoin:round;
+    }
+    .navbar .logo .logo-text{
+      font-size:15px;font-weight:900;letter-spacing:3px;
       color:#d4a853;
       text-shadow:0 2px 12px rgba(180,130,50,.3);
     }
-    .navbar .logo .logo-text{
-      font-size:14px;font-weight:900;letter-spacing:3px;
-      color:#d4a853;
-      text-shadow:0 2px 12px rgba(180,130,50,.3);
+    .navbar .logo{
+      display:flex;align-items:center;gap:8px;
     }
     .nav-btn{
       background:none;border:none;
@@ -1859,8 +1862,8 @@
     @media(max-width:480px){
       .navbar{padding:0 10px}
       .navbar .logo{margin-right:6px}
-      .navbar .logo .logo-morse{font-size:9px;letter-spacing:2px}
-      .navbar .logo .logo-text{font-size:11px;letter-spacing:1.5px}
+      .navbar .logo .logo-icon{width:18px;height:18px}
+      .navbar .logo .logo-text{font-size:12px;letter-spacing:2px}
       .nav-btn{padding:5px 8px;font-size:11px;border-radius:5px}
       .navbar .api-btn{padding:4px 8px;font-size:10px}
       #playerPage{padding:8px 4px}
@@ -1922,8 +1925,8 @@
     }
     @media(max-width:360px){
       .navbar{padding:0 6px}
-      .navbar .logo .logo-morse{font-size:7px;letter-spacing:1px}
-      .navbar .logo .logo-text{font-size:9px;letter-spacing:1px}
+      .navbar .logo .logo-icon{width:15px;height:15px}
+      .navbar .logo .logo-text{font-size:10px;letter-spacing:1px}
       .nav-btn{padding:4px 5px;font-size:9px;border-radius:4px}
       .nav-btn svg{width:12px;height:12px}
       .nav-btn .nav-label{display:none}
@@ -2069,7 +2072,7 @@
   <nav class="navbar">
     <!-- U = ••-  R = •-•  V = •••-  A = •- -->
     <div class="logo">
-      <span class="logo-morse">••- •-• •••- •-</span>
+      <svg class="logo-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><path d="M7 5a10 10 0 0110 0M5 9a10 10 0 0114 0"/></svg>
       <span class="logo-text">URVA</span>
     </div>
     <span class="spacer"></span>
