@@ -57,7 +57,7 @@
 <br/><br/>
 
 <!-- Animated demo screen recording - replace with actual screen recording when available -->
-<img src="https://raw.githubusercontent.com/Rizirfan/Urva/main/assets/screenshot.png" alt="Urva Demo" width="800" style="border-radius:16px;border:2px solid rgba(108,92,231,0.3);box-shadow:0 20px 60px rgba(0,0,0,0.5);"/>
+<img src="https://raw.githubusercontent.com/Rizirfan/Urva/main/assets/screenshot.png.png" alt="Urva Demo" width="800" style="border-radius:16px;border:2px solid rgba(108,92,231,0.3);box-shadow:0 20px 60px rgba(0,0,0,0.5);"/>
 
 <br/><br/>
 
