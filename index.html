@@ -406,6 +406,15 @@
       font-size:8px;font-weight:700;letter-spacing:.06em;
       color:#7a756a;text-transform:uppercase;
     }
+    @media(max-width:700px){
+      .bg-ambient .orb:nth-child(1){width:300px;height:300px;top:-10%;left:-20%}
+      .bg-ambient .orb:nth-child(2){width:250px;height:250px;bottom:-8%;right:-20%}
+      .bg-ambient .orb:nth-child(3){width:180px;height:180px;top:35%;left:30%}
+      .system-point-light{width:350px;height:350px;top:50%}
+    }
+    @media(max-width:480px){
+      .system-point-light{width:250px;height:250px}
+    }
     @media(max-width:600px){.nav-switch-group{display:none}}
 
     /* ====== PAGES ====== */
@@ -1790,37 +1799,163 @@
       #playerPage{padding:10px 10px 36px}
     }
     @media(max-width:700px){
-      #playerPage{padding:16px;align-items:center}
-      .rig{flex-direction:column;align-items:center;gap:12px;width:100%}
+      .wall-posters{display:none}
+      #playerPage{padding:12px 8px;align-items:center}
+      .rig{flex-direction:column;align-items:center;gap:8px;width:100%}
       .shelf{display:none}
-      .speaker{width:100%;height:60px;flex-direction:row;padding:8px 16px}
-      .speaker::before{inset:5px;border-radius:4px}
-      .speaker::after{display:none}
-      .speaker .spk-grill{width:40px;height:40px}
-      .speaker .spk-grill::after{inset:3px;border-width:2px}
-      .speaker .spk-grill .spk-cone{width:26px;height:26px}
-      .speaker .spk-mid{width:30px;height:30px}
+      .speaker{width:52px;height:220px;padding:12px 0 50px;border-radius:5px;flex-shrink:0}
+      .speaker::before{inset:4px;border-radius:3px}
+      .speaker::after{width:20px;height:20px;bottom:18px;border-width:3px}
+      .speaker .spk-grill{width:36px;height:36px}
+      .speaker .spk-grill::after{inset:3px;border-width:3px}
+      .speaker .spk-grill .spk-cone{width:24px;height:24px}
+      .speaker .spk-mid{width:24px;height:24px}
       .speaker .spk-mid::after{inset:2px;border-width:2px}
-      .speaker .spk-mid .spk-cone-sm{width:20px;height:20px}
-      .speaker .spk-tweet{width:22px;height:22px}
+      .speaker .spk-mid .spk-cone-sm{width:16px;height:16px}
+      .speaker .spk-tweet{width:18px;height:18px}
+      .speaker .spk-tweet .spk-cone-xs{width:12px;height:12px}
       .speaker .spk-label{display:none}
-      .stack{width:100%;max-width:400px}
+      .speaker .spk-mid .spk-cone-sm::after{inset:25%}
+      .stack{width:100%;max-width:340px;flex-shrink:1;min-width:0}
+      .module{padding:5px 10px;border-radius:3px}
+      .module-label{font-size:6px;margin-bottom:2px;letter-spacing:.08em}
+      .module-label .indicator{width:3px;height:3px}
+      .cd-player .cd-top{gap:6px}
+      .cd-player .cd-tray{width:36px;height:28px}
+      .cd-player .cd-tray .cd-disc{width:22px;height:22px}
+      .cd-player .cd-display{height:28px;padding:2px 6px}
+      .cd-player .cd-display .dd-title{font-size:9px;max-width:80px}
+      .cd-player .cd-display .dd-line2{font-size:7px}
+      .tuner .tuner-dial{height:24px;padding:0 6px}
+      .tuner .tuner-dial .freq-val{font-size:11px}
+      .tuner .tuner-dial .freq-band .freq{font-size:6px}
+      .eq .eq-bars{height:30px;gap:2px;padding:2px 3px}
+      .amp .amp-top{gap:6px}
+      .amp .amp-knob-lg{width:24px;height:24px}
+      .amp .amp-knob-lg .knob-inner{width:16px;height:16px}
+      .amp .amp-knob-lg .knob-ticks{-webkit-mask:radial-gradient(circle,transparent 12px,#000 12px);mask:radial-gradient(circle,transparent 12px,#000 12px)}
+      .amp .amp-ctrls{gap:3px}
+      .amp .amp-ctrls .amp-btn{width:20px;height:14px;font-size:7px;border-radius:2px}
+      .amp .amp-ctrls .amp-btn.play-btn{width:24px}
+      .amp .amp-knobs-sm{gap:3px}
+      .amp .amp-vu{gap:4px;margin-top:3px}
+      .amp .amp-vu .vu{height:18px}
+      .amp .amp-vu .vu .vu-needle{height:16px}
+      .cassette .cass-top{gap:6px}
+      .cassette .cass-deck{padding:3px 5px}
+      .cassette .cass-deck .cass-window{height:14px;padding:0 4px}
+      .cassette .cass-deck .cass-window .cass-tape .cass-reel{width:8px;height:8px}
+      .cassette .cass-deck .cass-ctrls .cass-btn{width:15px;height:10px;font-size:5px}
+      .cassette .cass-deck .cass-label-row .cass-letter{font-size:6px}
+      .cassette .cass-deck .cass-label-row .cass-ind{width:3px;height:3px}
+      .base .base-top{gap:6px}
+      .base .base-btns{gap:2px}
+      .base .base-btns .base-btn{height:14px;font-size:6px;padding:0 5px;border-radius:2px}
+      .base .base-vol input[type="range"]{width:50px}
+      .stack-progress{padding:4px 10px;margin-top:0}
+      .stack-progress .times{font-size:8px}
+      .stack-progress .bar{height:4px}
     }
     @media(max-width:480px){
-      .navbar{padding:0 12px}
-      .navbar .logo{margin-right:10px;gap:0}
-      .navbar .logo .logo-morse{font-size:10px;letter-spacing:3px}
-      .navbar .logo .logo-text{font-size:12px;letter-spacing:2px}
-      .nav-btn{padding:6px 10px;font-size:12px}
-      .module{padding:8px 18px}
-      .stack-progress{padding:6px 18px}
-      .cd-player .cd-display .dd-title{font-size:10px;max-width:100px}
-      .amp .amp-knob-lg{width:32px;height:32px}
-      .amp .amp-knob-lg .knob-inner{width:20px;height:20px}
-      .amp .amp-ctrls .amp-btn{width:26px;height:20px;font-size:9px}
-      .amp .amp-ctrls .amp-btn.play-btn{width:30px}
-      .pl-search input{font-size:13px;padding:13px 16px 13px 44px}
-      .base .base-vol input[type="range"]{width:60px}
+      .navbar{padding:0 10px}
+      .navbar .logo{margin-right:6px}
+      .navbar .logo .logo-morse{font-size:9px;letter-spacing:2px}
+      .navbar .logo .logo-text{font-size:11px;letter-spacing:1.5px}
+      .nav-btn{padding:5px 8px;font-size:11px;border-radius:5px}
+      .navbar .api-btn{padding:4px 8px;font-size:10px}
+      #playerPage{padding:8px 4px}
+      .rig{gap:6px}
+      .speaker{width:42px;height:170px;padding:10px 0 38px;border-radius:4px}
+      .speaker::before{inset:3px}
+      .speaker::after{width:16px;height:16px;bottom:14px;border-width:2px}
+      .speaker .spk-grill{width:30px;height:30px}
+      .speaker .spk-grill::after{inset:2px;border-width:2px}
+      .speaker .spk-grill .spk-cone{width:20px;height:20px}
+      .speaker .spk-mid{width:20px;height:20px}
+      .speaker .spk-mid::after{inset:1.5px;border-width:1.5px}
+      .speaker .spk-mid .spk-cone-sm{width:13px;height:13px}
+      .speaker .spk-tweet{width:14px;height:14px}
+      .speaker .spk-tweet .spk-cone-xs{width:10px;height:10px}
+      .stack{max-width:290px}
+      .module{padding:4px 8px}
+      .cd-player .cd-tray{width:30px;height:24px}
+      .cd-player .cd-tray .cd-disc{width:18px;height:18px}
+      .cd-player .cd-display{height:24px}
+      .cd-player .cd-display .dd-title{font-size:8px;max-width:60px}
+      .cd-player .cd-display .dd-line2{font-size:6px}
+      .tuner .tuner-dial{height:20px}
+      .tuner .tuner-dial .freq-val{font-size:9px}
+      .eq .eq-bars{height:24px;gap:2px}
+      .amp .amp-knob-lg{width:20px;height:20px}
+      .amp .amp-knob-lg .knob-inner{width:13px;height:13px}
+      .amp .amp-knob-lg .knob-ticks{-webkit-mask:radial-gradient(circle,transparent 10px,#000 10px);mask:radial-gradient(circle,transparent 10px,#000 10px)}
+      .amp .amp-ctrls .amp-btn{width:18px;height:12px;font-size:6px}
+      .amp .amp-ctrls .amp-btn.play-btn{width:20px}
+      .amp .amp-vu .vu{height:14px}
+      .base .base-btns .base-btn{height:12px;font-size:5px;padding:0 4px}
+      .base .base-vol input[type="range"]{width:40px}
+      .stack-progress{padding:3px 8px}
+      .stack-progress .times{font-size:7px}
+      .drawer{width:100vw;max-width:100vw;border-radius:0}
+      .drawer .drawer-head{padding:14px 16px 8px}
+      .drawer .drawer-head h3{font-size:22px}
+      .drawer-tabs{padding:6px 12px 0;flex-wrap:wrap;gap:4px}
+      .drawer-tabs .dtab{padding:6px 12px;font-size:11px;border-radius:14px}
+      .pl-search{padding:6px 12px;gap:6px}
+      .pl-search input{font-size:12px;padding:10px 12px 10px 36px;border-radius:10px}
+      .pl-search .search-wrap .search-icon{left:12px}
+      .pl-search .search-wrap .search-icon svg{width:13px;height:13px}
+      .pl-search button{padding:10px 12px;font-size:12px;border-radius:10px}
+      .pl-body{padding:4px 8px 12px}
+      .track-row{padding:7px 10px;gap:8px;border-radius:8px}
+      .t-num{width:16px;font-size:11px}
+      .t-thumb{width:30px;height:30px;border-radius:6px}
+      .t-info .nm{font-size:12px}
+      .t-info .ch{font-size:10px}
+      .t-dur{width:34px;font-size:11px}
+      .t-btn{width:22px;height:22px;border-radius:6px;font-size:11px}
+      .modal{padding:24px 20px 20px;border-radius:20px}
+      .modal h2{font-size:20px}
+      .modal .modal-actions button{padding:10px 20px;font-size:13px;border-radius:10px}
+      .settings-modal .settings-item{padding:12px 14px}
+      .settings-modal .settings-input{width:130px;font-size:11px}
+    }
+    @media(max-width:360px){
+      .navbar{padding:0 6px}
+      .navbar .logo .logo-morse{font-size:7px;letter-spacing:1px}
+      .navbar .logo .logo-text{font-size:9px;letter-spacing:1px}
+      .nav-btn{padding:4px 5px;font-size:9px;border-radius:4px}
+      .nav-btn svg{width:12px;height:12px}
+      .nav-btn .nav-label{display:none}
+      .navbar .api-btn{padding:3px 6px;font-size:9px}
+      .speaker{width:36px;height:140px;padding:8px 0 30px}
+      .speaker::after{width:13px;height:13px;bottom:10px;border-width:2px}
+      .speaker .spk-grill{width:26px;height:26px}
+      .speaker .spk-grill .spk-cone{width:17px;height:17px}
+      .speaker .spk-mid{width:17px;height:17px}
+      .speaker .spk-mid .spk-cone-sm{width:11px;height:11px}
+      .speaker .spk-tweet{width:12px;height:12px}
+      .speaker .spk-tweet .spk-cone-xs{width:8px;height:8px}
+      .stack{max-width:250px}
+      .module{padding:3px 6px}
+      .cd-player .cd-tray{width:26px;height:20px}
+      .cd-player .cd-tray .cd-disc{width:15px;height:15px}
+      .cd-player .cd-display{height:20px;padding:1px 4px}
+      .cd-player .cd-display .dd-title{font-size:7px;max-width:50px}
+      .tuner .tuner-dial{height:18px}
+      .tuner .tuner-dial .freq-val{font-size:8px}
+      .eq .eq-bars{height:20px}
+      .amp .amp-knob-lg{width:18px;height:18px}
+      .amp .amp-knob-lg .knob-inner{width:11px;height:11px}
+      .amp .amp-vu .vu{height:12px}
+      .base .base-vol input[type="range"]{width:32px}
+      .track-row{padding:5px 8px;gap:5px}
+      .t-thumb{width:24px;height:24px}
+      .t-info .nm{font-size:10px}
+      .t-dur{width:28px;font-size:9px}
+      .pl-search input{font-size:10px;padding:6px 8px 6px 26px}
+      .pl-search button{padding:6px 8px;font-size:10px}
+    }
     /* ====== ROOM LIGHT OVERLAY ====== */
     .room-light-overlay {
       position: absolute;
@@ -1938,7 +2073,7 @@
       <span class="logo-text">URVA</span>
     </div>
     <span class="spacer"></span>
-    <button class="nav-btn" id="navPlaylist"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg> Playlist</button>
+    <button class="nav-btn" id="navPlaylist"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg> <span class="nav-label">Playlist</span></button>
     <div class="nav-switch-group">
       <label class="ns-row" title="Power">
         <button class="ns-rocker active" id="navPowerSwitch"><span class="ns-nob"></span></button>
