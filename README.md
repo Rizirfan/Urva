@@ -277,28 +277,7 @@ Click any poster to customize the name, subtitle, or image!
   </circle>
 </svg>
 
-## 📸 Screenshots
 
-<div align="center">
-<table>
-<tr>
-<td align="center"><img src="https://via.placeholder.com/400x250/1a1a2e/6c5ce7?text=Hi-Fi+Stack" alt="Hi-Fi Stack" width="400"/></td>
-<td align="center"><img src="https://via.placeholder.com/400x250/1a1a2e/00d2ff?text=Dark+Room+Mode" alt="Dark Room" width="400"/></td>
-</tr>
-<tr>
-<td align="center"><b>Full Hi-Fi Stack</b></td>
-<td align="center"><b>Dark Room Ambient Mode</b></td>
-</tr>
-<tr>
-<td align="center"><img src="https://via.placeholder.com/400x250/1a1a2e/ff6fd5?text=Fairy+Lights" alt="Fairy Lights" width="400"/></td>
-<td align="center"><img src="https://via.placeholder.com/400x250/1a1a2e/d4a853?text=Playlist+Drawer" alt="Playlist Drawer" width="400"/></td>
-</tr>
-<tr>
-<td align="center"><b>Interactive Fairy Lights</b></td>
-<td align="center"><b>Playlist Drawer</b></td>
-</tr>
-</table>
-</div>
 
 > **📌 Note:** Add actual screenshots by taking captures of the app and placing them in the `assets/` folder, then update the `src` URLs above.
 
